@@ -2,11 +2,11 @@
 # Docker Spring Boot MongoDB Project
 
 
-This project demonstrates the integration of a Spring Boot application with MongoDB, utilizing Docker for containerization. It's designed for developers looking to implement CRUD operations on a MongoDB database through a Spring Boot application.
+This project demonstrates the integration of a Spring Boot application with MongoDB, utilizing (TODO Docker for containerization). It's designed for developers looking to implement CRUD operations on a MongoDB database through a Spring Boot application.
 
 ## Description
 
-The Docker Spring Boot MongoDB project provides a RESTful API for managing student entities. It includes operations for creating, reading, updating, and deleting student records in a MongoDB database. The project showcases the use of Spring Data MongoDB for repository management, Spring Web for RESTful services, and Docker for easy deployment and environment consistency.
+The Docker Spring Boot MongoDB project provides a RESTful API for managing student entities. It includes operations for creating, reading, updating, and deleting student records in a MongoDB database. The project showcases the use of Spring Data MongoDB for repository management, Spring Web for RESTful services, and (TODO Docker) for easy deployment and environment consistency.
 
 ## Getting Started
 
@@ -40,7 +40,6 @@ cd DockerSpringBootMongoDB
 
 6. **Connect the project to MongoDB**: Explain any steps needed to configure the project to connect to the local MongoDB instance, such as updating application properties with the correct database URI.
 
-Here's how you could structure these updates in the `README.md` file:
 
 ```markdown
 ## Installing and Running MongoDB Locally
@@ -130,7 +129,7 @@ This guide assumes a general approach to installing MongoDB and may need adjustm
 mvn clean install
 ```
 
-3. For Docker TODO Run the Docker container:
+3. For (Docker TODO Run the Docker container):
 
 ```bash
 docker-compose up --build
