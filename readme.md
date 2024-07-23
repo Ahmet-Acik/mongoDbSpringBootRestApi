@@ -137,7 +137,7 @@ docker-compose up --build
 
 ### Executing program
 
-After successfully building and running the Docker container, the Spring Boot application will be accessible at `http://localhost:8080`.
+After successfully building and running the project (TODO Docker container), the Spring Boot application will be accessible at `http://localhost:8080`.
 
 ## API Reference
 
