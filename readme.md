@@ -1,5 +1,6 @@
-```markdown
+
 # Docker Spring Boot MongoDB Project
+
 
 This project demonstrates the integration of a Spring Boot application with MongoDB, utilizing Docker for containerization. It's designed for developers looking to implement CRUD operations on a MongoDB database through a Spring Boot application.
 
@@ -16,6 +17,7 @@ The Docker Spring Boot MongoDB project provides a RESTful API for managing stude
 - Docker
 - MongoDB
 
+
 ### Installing
 
 1. Clone the repository to your local machine:
@@ -24,14 +26,111 @@ The Docker Spring Boot MongoDB project provides a RESTful API for managing stude
 git clone https://github.com/Ahmet-Acik/DockerSpringBootMongoDB.git
 cd DockerSpringBootMongoDB
 ```
+ ### Installing MongoDB if not installed, and how to start it to work with the project can follow these steps:
 
+1. **Check if MongoDB is installed**: Provide a command or instructions to check if MongoDB is already installed on the user's system.
+
+2. **Download MongoDB**: Include a link to the MongoDB official download page and instructions for selecting the correct version based on the user's operating system.
+
+3. **Install MongoDB**: Offer step-by-step instructions for installing MongoDB. These instructions will vary based on the operating system.
+
+4. **Start MongoDB**: Provide commands to start the MongoDB server on the user's machine.
+
+5. **Verify MongoDB is running**: Suggest a command to check that MongoDB is running correctly.
+
+6. **Connect the project to MongoDB**: Explain any steps needed to configure the project to connect to the local MongoDB instance, such as updating application properties with the correct database URI.
+
+Here's how you could structure these updates in the `README.md` file:
+
+```markdown
+## Installing and Running MongoDB Locally
+
+If you do not have MongoDB installed on your system, follow these steps to download, install, and start MongoDB.
+
+### Check if MongoDB is Installed
+
+Open your terminal and run:
+
+```bash
+mongo --version
+```
+
+If MongoDB is installed, you should see the version information. If not, follow the steps below to install it.
+
+### Download MongoDB
+
+1. Visit the MongoDB official download page: [MongoDB Download Center](https://www.mongodb.com/try/download/community)
+2. Select the version suitable for your operating system.
+3. Download the installer or package.
+
+### Install MongoDB
+
+#### For Windows
+
+- Run the MongoDB installer you downloaded.
+- Follow the installation wizard steps.
+- Add MongoDB's `bin` folder to your system's PATH environment variable.
+
+#### For macOS
+
+- You can use Homebrew to install MongoDB:
+
+```bash
+brew tap mongodb/brew
+brew install mongodb-community
+```
+
+#### For Linux
+
+- The installation steps can vary depending on your Linux distribution. Please follow the instructions on the MongoDB website for your specific distribution.
+
+### Start MongoDB
+
+#### For Windows
+
+- Open Command Prompt as Administrator and run:
+
+```bash
+net start MongoDB
+```
+
+#### For macOS and Linux
+
+- Run the following command in your terminal:
+
+```bash
+brew services start mongodb-community
+```
+
+### Verify MongoDB is Running
+
+- You can verify that MongoDB is running by connecting to the database server using the MongoDB shell:
+
+```bash
+mongo
+```
+
+### Connect the Project to MongoDB
+
+- Ensure your project's `application.properties` or `application.yml` file is configured to connect to your local MongoDB instance. Typically, the default URI is:
+
+```properties
+spring.data.mongodb.uri=mongodb://localhost:27017/yourDatabaseName
+```
+
+Replace `yourDatabaseName` with the name of your database.
+
+After MongoDB is set up and running, you can proceed with the project installation and execution steps as described in the previous sections.
+```
+
+This guide assumes a general approach to installing MongoDB and may need adjustments based on specific user environments or newer versions of MongoDB.
 2. Build the project using Maven:
 
 ```bash
 mvn clean install
 ```
 
-3. Run the Docker container:
+3. For Docker TODO Run the Docker container:
 
 ```bash
 docker-compose up --build
@@ -170,7 +269,7 @@ mvn test
 
 ## Deployment
 
-The project includes a `Dockerfile` and `docker-compose.yml` for easy deployment. Use Docker Compose to build and run the application container alongside a MongoDB container.
+TODO The project includes a `Dockerfile` and `docker-compose.yml` for easy deployment. Use Docker Compose to build and run the application container alongside a MongoDB container.
 
 ## Contributing
 
